@@ -9,73 +9,140 @@
     <!-- CSS File -->
     <link rel="stylesheet" href="styles.css" />
 
-    <!-- Lottie Animation -->
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 
-    </head>
-    <body>
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-     
+
+</head>
+<body>
     <!-- Header Section Start -->
-    <header id="site-header" class="fixed-top">
-      <div class="container">
-          <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
-              <h1>
-                  <a class="navbar-brand" href="index.html">
-                      <i class="fa-sharp fa-regular fa-truck-fast fa-bounce"></i> NP Courier Service
-                  </a>
-              </h1>
-              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
-                  <span class="navbar-toggler-icon fa icon-close fa-times"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarScroll">
-                  <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
-                      
-                      <li class="nav-item">
-                          <a class="nav-link" href="about.html">About</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="receiving.html">Receiving</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="delivery.html">Delivery</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="tracking.html">Tracking</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="contact.html">Contact</a>
-                      </li>
-                  </ul>
-              </div>
-          </nav>
-      </div>
-  </header>
-  <!-- Header Section End -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#home" class="nav_logo">
+                <i class="fa-sharp fa-solid fa-truck fa-bounce"></i> NP Courier Service
+            </a>
 
-  <!-- Home Section Start -->
-<section class="w3l-main-slider banner-slider" id="home">
-  <div class="slider-info banner-view banner-top1">
-      <div class="container">
-          <div class="banner-info header-hero-19">
-              <h3 class="title-hero-19">Enjoy the best parcel delivery experience</h3>
-              <p class="w3hny-tag">We offer express parcel delivery services to over 30 countries.</p>
-              <a href="about.html" class="btn btn-style btn-primary mt-4">Learn More </a>
 
-          </div>
-      </div>
-  </div>
+            <ul class="nav_items">
+                <li class="nav_item">
+                    <a href="#home" class="nav_link">Home</a>
+                    <a href="#about" class="nav_link">About</a>
+                    <a href="#" class="nav_link">Receiving</a>
+                    <a href="#" class="nav_link">Delivery</a>
+                    <a href="#" class="nav_link">Tracking</a>
+                    <a href="~/Home/Contact" class="nav_link">Contact</a>
+                </li>
+            </ul>
+
+            <button class="button" id="form-open">Login</button>
+        </nav>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Home Section Start -->
+<section class="home" id="home">
+    <h1>Enjoy the best parcel delivery experience</h1>
+    <p>We offer express parcel delivery services to over 30 countries.</p>
+    <div class="form_container">
+        <i class="uil uil-times form_close"></i>
+        <!-- Login Form -->
+        <div class="form login_form">
+            <form action="#">
+                <h2>Login</h2>
+
+                <div class="input_box">
+                    <input type="email" placeholder="Enter your email" required />
+                    <i class="uil uil-envelope-alt email"></i>
+                </div>
+                <div class="input_box">
+                    <input type="password" placeholder="Enter your password" required />
+                    <i class="uil uil-lock password"></i>
+                    <i class="uil uil-eye-slash pw_hide"></i>
+                </div>
+
+                <div class="option_field">
+                    <span class="checkbox">
+                        <input type="checkbox" id="check" />
+                        <label for="check">Remember me</label>
+                    </span>
+                    <a href="#" class="forgot_pw">Forgot password?</a>
+                </div>
+
+                <button class="button">Login Now</button>
+
+                <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+            </form>
+        </div>
+
+        <!-- Signup Form -->
+        <div class="form signup_form">
+            <form action="#">
+                <h2>Signup</h2>
+
+                <div class="input_box">
+                    <input type="email" placeholder="Enter your email" required />
+                    <i class="uil uil-envelope-alt email"></i>
+                </div>
+                <div class="input_box">
+                    <input type="password" placeholder="Create password" required />
+                    <i class="uil uil-lock password"></i>
+                    <i class="uil uil-eye-slash pw_hide"></i>
+                </div>
+                <div class="input_box">
+                    <input type="password" placeholder="Confirm password" required />
+                    <i class="uil uil-lock password"></i>
+                    <i class="uil uil-eye-slash pw_hide"></i>
+                </div>
+
+                <button class="button">Signup Now</button>
+
+                <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+            </form>
+        </div>
+    </div>
 </section>
 <!-- Home Section End -->
 
+<!-- About Section Start -->
+<section class="w3l-grids-3 py-5" id="about">
+        <div class="container py-md-5 py-3">
+            <div class="row w3home-ab-grids">
+                <div class="w3ab-right-top col-lg-6 pe-lg-5">
+                    <img src="/images/delivery.jpg" alt="" class="img-fluid radius-image">
+                </div>
+                <div class="w3ab-left-top col-lg-6 mt-lg-0 mt-4 pt-lg-0 pt-2">
+                <h5 class="title-subw3hny mb-1">We’re NP Courier Service!</h5>
+                    <h4 class="title-w3l mb-2">Fast and reliable shipping services</h4>
+                <p class="my-3">
+                    NP Courier Service (NPCS), your trusted partner for express parcel delivery in over 30 countries. Our extensive network of front offices and delivery stations ensures that your parcels are received and delivered safely and efficiently.
+                </p>
 
+                <p class="my-3">
+                    We take pride in our fast and reliable shipping services, and are committed to constantly improving to provide you with the best experience.
+                </p>
 
+                <p class="my-3">
+                    At NP Courier Service, we are dedicated to ensuring the safe delivery of your parcels. We believe that your satisfaction is the cornerstone of our success.
+                </p>
 
+                <p class="my-3">
+                    Thank you for considering NP Courier Service for your shipping needs. We look forward to the opportunity to serve you and exceed your expectations.
+                </p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- About Section End -->
 
     <!-- Javascript File -->
     <script src="script.js"></script>
