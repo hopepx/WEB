@@ -27,10 +27,11 @@
 .contact__description {
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   font-size: 1.2rem;
   margin-top: 10px; /* adjust this to add spacing between each box */
 }
+
 .contact__icon {
   margin-right: 10px;
   font-size: 1.5rem;
