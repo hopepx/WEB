@@ -106,17 +106,6 @@
   font-size: 1.2rem;
 }
 
-.map-wrapper {
-  position: relative;
-  height: 450px; /* assumes the map is 450px high */
-}
-
-iframe {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 /* Responsive */
 @media screen and (max-width: 768px) {
   .nav__menu {

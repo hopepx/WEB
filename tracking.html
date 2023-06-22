@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parcel Tracking</title>
+    
+    <!-- CSS File -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="tracking.css" />
+
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Header Section Start -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#home" class="nav_logo">
+                <i class="fa-sharp fa-solid fa-truck fa-bounce"></i> NP Courier Service
+            </a>
+
+
+            <ul class="nav_items">
+                <li class="nav_item">
+                    <a href="#home" class="nav_link">Home</a>
+                    <a href="#about" class="nav_link">About</a>
+                    <a href="#" class="nav_link">Tracking</a>
+                    <a href="#" class="nav_link">View Parcels</a>
+                    <a href="contact.html" class="nav_link">Contact</a>
+                </li>
+            </ul>
+
+            <button class="button" id="form-open">Login</button>
+        </nav>
+    </header>
+    <!-- Header Section End -->
+    
+    <!-- Main Content Section -->
+    <main>
+      <form class="tracking-form">
+        <label for="parcel-id">Parcel ID:</label>
+        <input type="text" id="parcel-id" name="parcel-id" required>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <input type="submit" value="Search">
+      </form>
+    </main>
+    
+    <!-- Contact Us Section -->
+    <section class="contact-us">
+      <h2>Contact Us</h2>
+      <p>If you need assistance or have questions regarding your parcel or the tracking process, please contact us at:</p>
+      <p>Phone: +65 9696-6969</p>
+      <p>Email: NP@courierservice.com</p>
+    </section>
+  </body>
+</html>
