@@ -1,0 +1,104 @@
+.feedback-section {
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  padding: 40px;
+  text-align: center;
+}
+
+.feedback-heading {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.emoji-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.emoji {
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.sad-face:hover,
+.neutral-face:hover,
+.happy-face:hover,
+.wow-face:hover,
+.love-face:hover {
+  transform: scale(1.2);
+}
+
+.feedback-textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  resize: none;
+  height: 100px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+/* Response Section styles */
+
+.response-section {
+  background-color: #ffffff;
+  margin-top: 40px;
+}
+
+.response-heading {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.response-card {
+  border: 1px solid #d9d9d9;
+  margin-bottom: 20px;
+}
+
+.response-card-header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.response-card-time {
+  font-size: 14px;
+}
+
+.response-card-rating {
+  font-size: 24px;
+}
+
+.response-card-body {
+  padding: 10px;
+}
+
+.response-card-message {
+  font-size: 16px;
+  line-height: 1.5;
+}

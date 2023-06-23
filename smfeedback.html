@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parcel Tracking</title>
+    
+    <!-- CSS File -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="smfeedback.css" />
+
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Header Section Start -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#home" class="nav_logo">
+                <i class="fa-sharp fa-solid fa-truck fa-bounce"></i> NP Courier Service
+            </a>
+
+
+            <ul class="nav_items">
+                <li class="nav_item">
+                    <a href="#home" class="nav_link">Home</a>
+                    <a href="#about" class="nav_link">About</a>
+                    <a href="#" class="nav_link">Tracking</a>
+                    <a href="#" class="nav_link">View Parcels</a>
+                    <a href="contact.html" class="nav_link">Contact</a>
+                </li>
+            </ul>
+
+            <button class="button" id="form-open">Login</button>
+        </nav>
+    </header>
+    <!-- Header Section End -->
+  
+  <section class="feedback-section"><br><br><br><br>
+    <div class="container">
+      <div class="wrapper">
+        <h2 class="feedback-heading">How Would You Rate Our Service?</h2>
+        <div class="emoji-row">
+          <span class="emoji sad-face">&#x1F61E;</span>
+          <span class="emoji neutral-face">&#x1F610;</span>
+          <span class="emoji happy-face">&#x1F60A;</span>
+          <span class="emoji wow-face">&#x1F62E;</span>
+          <span class="emoji love-face">&#x1F60D;</span>
+        </div>
+        <textarea class="feedback-textarea" placeholder="Type your feedback or enquiry..."></textarea>
+        <button class="submit-button">Submit</button>
+      </div>
+    </div>
+  </section>
+  
+  <section class="response-section">
+    <div class="container">
+      <div class="wrapper">
+        <h2 class="response-heading">Response to Feedback</h2>
+        <div class="response-card">
+          <div class="response-card-header">
+            <span class="response-card-time">1 hour ago</span>
+            <span class="response-card-rating">&#x1F60A;</span>
+          </div>
+          <div class="response-card-body">
+            <p class="response-card-message">Thank you for your positive feedback! We're glad to hear that you enjoyed our service.</p>
+          </div>
+        </div>
+        <!-- Repeat response-card for each response -->
+      </div>
+    </div>
+  </section>
+</body>
+</html>
