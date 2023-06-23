@@ -7,7 +7,6 @@
     <title>Parcel Tracking</title>
     
     <!-- CSS File -->
-    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="feedback.css" />
 
     <!-- Unicons -->
@@ -50,13 +49,29 @@
     <!-- Header Section End -->
 
     <!-- Feedback Section End -->
-    <div class="form"><br><br><br><br>
-        <h2>Feedback/Enquiry</h2>
-        <p>Need help with your parcel delivery? Let us know and we will assist you as soon as possible.</p>
-        <label for="feedback-input">Message:</label>
-        <textarea id="feedback-input" placeholder="Enter your message here"></textarea>
-        <input type="submit" value="Submit" id="submit-form">
-      </div>
+    <div class="container">
+        <div class="wrapper">
+              <p class="text">How Would You Rate Our Service?</p>
+              <div class="emoji">
+                  <div>🙁</div>
+                  <div>😕</div>
+                  <div>😐</div>
+                  <div>🙂</div>
+                  <div>😍</div>
+              </div>
+        </div>
+
+        <textarea class="textarea" cols="30" rows="3"
+        placeholder="Write In Your Feedback"></textarea>
+
+        <a href="#" class="btn">Submit</a>
+
+    </div>
+
+    <div class="response-panel">
+        <h3>Response To Feedback:</h3>
+        <div class="response-message"></div>
+    </div>
     <!-- Feedback Section End -->
 
     <!-- Javascript File -->
